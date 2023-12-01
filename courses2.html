@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            position: relative;
+        }
+
+        #ttBgImg{
+            width: 100vw;
+            height: 99vh;
+        }
+
+        #ttnav{
+            padding: 5px 20px 5px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            color: white;
+            font-family: cursive;
+            position: fixed;
+            width: 99vw;
+            top: 0;
+        }
+
+       #ttlogo{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+       }
+
+       #ttlogo:hover{
+        width: 80px;
+        height: 80px;
+       }
+
+       #ttNavMenu{
+        display: flex;
+        gap: 2rem;
+        font-size: xx-large;
+       }
+
+       #ttNavMenu div:hover{
+            color: blue;
+            cursor: pointer;
+       }
+
+       #coursesContent{
+        position: absolute;
+        top: 30%;
+        width: 96%;
+        left: 3%;
+       }
+       #coursesContentFirstBox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 80px;
+       }
+
+       #coursesContentFirstBox div{
+        width: 15rem;
+        text-align: center;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 1.5rem;
+        color: black;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+       }
+       #coursesContentFirstBox div:hover{
+        background-color: black;
+        color: white;
+       }
+
+    </style>
+</head>
+<body>
+    <img id="ttBgImg" src="./images/bgImg.jpg" alt="">
+    <div id="ttnav">
+        <div>
+            <a href="./index.html">
+                <img id="ttlogo" src="./images/logo.jpeg" alt="logo">
+            </a>
+        </div>
+        <div id="ttNavMenu">
+            <div>Post</div>
+            <div>Courses</div>
+            <div>Annoucement</div>
+        </div>
+    </div>
+
+    <div id="coursesContent">
+        <div id="coursesContentFirstBox">
+            <div>Check Degree Courses</div>
+            <div>Any Query</div>
+        </div>
+        <div id="coursesContentFirstBox">
+            <div><a href="./timeTable.html">Find Time Table</a></div>
+            <div>See Bus Routes</div>
+        </div>
+    </div>
+</body>
+</html>

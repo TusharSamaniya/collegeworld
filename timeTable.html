@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            position: relative;
+        }
+
+        #ttBgImg{
+            width: 100vw;
+            height: 99vh;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        #ttnav{
+            padding: 5px 20px 5px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            color: white;
+            font-family: cursive;
+            position: fixed;
+            width: 99vw;
+            top: 0;
+        }
+
+       #ttlogo{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+       }
+
+       #ttlogo:hover{
+        width: 80px;
+        height: 80px;
+       }
+
+       #ttNavMenu{
+        display: flex;
+        gap: 2rem;
+        font-size: xx-large;
+       }
+
+       #ttNavMenu div:hover{
+            color: blue;
+            cursor: pointer;
+       }
+
+       #ttContent{
+        position: absolute;
+        top: 27%;
+        width: 96%;
+        left: 3%;
+       }
+
+       #ttContentFirstBox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-bottom: 80px;
+       }
+
+       #ttContentFirstBox div{
+        width: 15rem;
+        text-align: center;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 1.5rem;
+        color: black;
+        font-weight: 600;
+        cursor: pointer;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+       }
+
+       .aTag{
+        color: black;
+       }
+
+       #ttContentFirstBox div:hover{
+        background-color: black;
+        color: white;
+       }
+
+       .aTag:hover{
+        color: white;
+       }
+
+    </style>
+</head>
+<body>
+    <img id="ttBgImg" src="./images/bgImg.jpg" alt="">
+    <div id="ttnav">
+        <div>
+            <a href="./index.html">
+                <img id="ttlogo" src="./images/logo.jpeg" alt="logo">
+            </a>
+        </div>
+        <div id="ttNavMenu">
+            <div>Post</div>
+            <div>Courses</div>
+            <div>Annoucement</div>
+        </div>
+    </div>
+
+    <div id="ttContent">
+        <div id="ttContentFirstBox">
+            <div><a class="aTag" target="_blank" href="./sectionATimeTable.html">Section A</a></div>
+            <div><a class="aTag" href="./sectionBTimeTable.html">Section B</a></div>
+            <div><a class="aTag" href="./sectionCTimeTable.html">Section C</a></div>
+        </div>
+        <div id="ttContentFirstBox">
+            <div><a class="aTag" href="./sectionDTimeTable.html">Section D</a></div>
+            <div><a class="aTag" href="./sectionETimeTable.html">Section E</a></div>
+        </div>
+    </div>
+</body>
+</html>
